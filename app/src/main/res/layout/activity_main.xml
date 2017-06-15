@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.immaker.valerian.programmingquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Programming Quiz"
+            android:textAllCaps="true"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="\u00A9Valerian Dwi Purnomo"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/logos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/program" />
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:hint="Enter your name"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-5dip"
+        android:layout_marginBottom="-5dip"
+        android:layout_marginLeft="-5dip"
+        android:layout_marginRight="-5dip"
+        android:background="@color/buttonColor"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="Start Quiz"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
